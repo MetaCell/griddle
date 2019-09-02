@@ -4,8 +4,8 @@
 "use strict";
 
 var React = require('react');
-
-var GridFilter = React.createClass({
+var createClass = require('create-react-class');
+var GridFilter = createClass({
     displayName: "GridFilter",
 
     getDefaultProps: function getDefaultProps() {

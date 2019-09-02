@@ -4,11 +4,12 @@
 'use strict';
 
 var React = require('react');
+var createClass = require('create-react-class');
 var includes = require('lodash/includes');
 var without = require('lodash/without');
 var find = require('lodash/find');
 
-var GridSettings = React.createClass({
+var GridSettings = createClass({
     displayName: 'GridSettings',
 
     getDefaultProps: function getDefaultProps() {

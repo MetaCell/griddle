@@ -8,8 +8,8 @@
 "use strict";
 
 var React = require('react');
-
-var CustomRowComponentContainer = React.createClass({
+var createClass = require('create-react-class');
+var CustomRowComponentContainer = createClass({
   displayName: "CustomRowComponentContainer",
 
   getDefaultProps: function getDefaultProps() {

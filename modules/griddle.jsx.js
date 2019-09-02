@@ -18,6 +18,8 @@ var _extends = Object.assign || function (target) {
 };
 
 var React = require('react');
+var PropTypes = require('prop-types');
+var createClass = require('create-react-class');
 var GridTable = require('./gridTable.jsx');
 var GridFilter = require('./gridFilter.jsx');
 var GridPagination = require('./gridPagination.jsx');
@@ -51,7 +53,7 @@ var _orderBy = require('lodash/orderBy');
 var _property = require('lodash/property');
 var _get = require('lodash/get');
 
-var Griddle = React.createClass({
+var Griddle = createClass({
     displayName: 'Griddle',
 
     statics: {
@@ -152,9 +154,9 @@ var Griddle = React.createClass({
         };
     },
     propTypes: {
-        isMultipleSelection: React.PropTypes.bool,
-        selectedRowIds: React.PropTypes.oneOfType([React.PropTypes.arrayOf(React.PropTypes.number), React.PropTypes.arrayOf(React.PropTypes.string)]),
-        uniqueIdentifier: React.PropTypes.string
+        isMultipleSelection: PropTypes.bool,
+        selectedRowIds: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.number), PropTypes.arrayOf(PropTypes.string)]),
+        uniqueIdentifier: PropTypes.string
     },
     defaultFilter: function defaultFilter(results, filter) {
         var that = this;

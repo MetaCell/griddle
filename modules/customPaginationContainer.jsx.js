@@ -18,8 +18,8 @@ var _extends = Object.assign || function (target) {
 };
 
 var React = require('react');
-
-var CustomPaginationContainer = React.createClass({
+var createClass = require('create-react-class');
+var CustomPaginationContainer = createClass({
   displayName: "CustomPaginationContainer",
 
   getDefaultProps: function getDefaultProps() {

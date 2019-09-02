@@ -4,8 +4,8 @@
 "use strict";
 
 var React = require('react');
-
-var CustomFilterContainer = React.createClass({
+var createClass = require('create-react-class');
+var CustomFilterContainer = createClass({
   displayName: "CustomFilterContainer",
 
   getDefaultProps: function getDefaultProps() {

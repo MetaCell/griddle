@@ -4,8 +4,8 @@
 "use strict";
 
 var React = require('react');
-
-var GridNoData = React.createClass({
+var createClass = require('create-react-class');
+var GridNoData = createClass({
     displayName: "GridNoData",
 
     getDefaultProps: function getDefaultProps() {
